@@ -51,7 +51,8 @@ The network file can have single or multiple header lines at the begining, which
  CCNI2	HSPA8
 
 The use can obtain help on running each of the arguments by typing the following:
- > ./run -help 
+ 
+ ./run -help 
 
  ./run requires at least 3 arguments:
  -file                     : the network file to run
@@ -68,6 +69,7 @@ The use can obtain help on running each of the arguments by typing the following
  -cols N (2,3) <int>       : Specify if network file is weighted (N=3) or unweighted (N=2)"
  -subsample                : Subsample the node set, ramdonly selecting -per N [0.0,1.0] of the node.
  -per N [0.0,1.0] <double> : Randomly selected N % of the node set.
+ 
  ------------------------------------------------------------------
  Example      : ./run  -file testData/karate.txt -a 3 -cols 3
  ------------------------------------------------------------------
