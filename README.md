@@ -47,11 +47,17 @@ The network file can have single or multiple header lines at the begining, which
  # Network file Example 2
  
  ADA	POTEF
+ 
  ADA	ACTB
+
  BEND7	TRIM27
+ 
  BEND7	C1QBP
+ 
  BEND7	LRP4
+ 
  CCNI2	HSPA1B
+ 
  CCNI2	HSPA8
 
 The use can obtain help on running each of the arguments by typing the following:
