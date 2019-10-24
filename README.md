@@ -60,6 +60,11 @@ The network file can have single or multiple header lines at the begining, which
  
  CCNI2	HSPA8
 
+----------------
+ *** Options *** 
+----------------
+
+------------------------------------------------------------------
 The use can obtain help on running each of the arguments by typing the following:
  
  ./run -help 
@@ -94,8 +99,11 @@ The use can obtain help on running each of the arguments by typing the following
  
  -per N [0.0,1.0] <double> : Randomly selected N % of the node set.
  
- ------------------------------------------------------------------
- Example      : ./run  -file testData/karate.txt -a 3 -cols 3
+ ---------------
+ *** Example *** 
+ ---------------
+ 
+ ./run  -file testData/karate.txt -a 3 -cols 3
  ------------------------------------------------------------------
  
 
