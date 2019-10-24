@@ -65,19 +65,33 @@ The use can obtain help on running each of the arguments by typing the following
  ./run -help 
 
  ./run requires at least 3 arguments:
+ 
  -file                     : the network file to run
+ 
  -header                   : use if there's a file header
+ 
  -skip N <int>             : use to skip N lines from start of network file
+ 
  -quite                    : turn off comments to command line [short cut -q]
+ 
  -seed N <int>             : Set N for the random number generator seed; default is 1.
+ 
  -a N (1,2,3) <int>        : Set N for the type of algorithm to run; default is 1. Where:
+ 
                            : 1 = Geodesic edge Betweenness
+                           
                            : 2 = Random edge Betweenness
+                           
                            : 3 = Spectral Betweenness
+                           
  -weighted                 : Specify if network file is weighted (network file with 3 columns)
+ 
                            : or not (network file with 2 columns ) [sort-cut -w]
+                           
  -cols N (2,3) <int>       : Specify if network file is weighted (N=3) or unweighted (N=2)"
+ 
  -subsample                : Subsample the node set, ramdonly selecting -per N [0.0,1.0] of the node.
+ 
  -per N [0.0,1.0] <double> : Randomly selected N % of the node set.
  
  ------------------------------------------------------------------
