@@ -36,12 +36,14 @@ This will execute the Geodeic edge Betweenness algorithm on the network file. Th
 
 The network file can have single or multiple header lines at the begining, which can be skipped using the -header or -skip arguments. The first two tab separated columns in the network file can contain the alpha-numerical IDs for the network edges, for example gene names or Entrez gene IDs. An additional third column can contains the edge weights. Output from running the clustering algorithm can be found in the folder OUT.
 
- #Network file Example 1
+ # Network file Example 1
+ 
  10006 10458
  7316 10152
  6709 10006
 
- #Network file Example 2
+ # Network file Example 2
+ 
  ADA	POTEF
  ADA	ACTB
  BEND7	TRIM27
