@@ -39,7 +39,9 @@ The network file can have single or multiple header lines at the begining, which
  # Network file Example 1
  
  10006 10458
+ 
  7316 10152
+ 
  6709 10006
 
  # Network file Example 2
