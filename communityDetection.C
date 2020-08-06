@@ -162,10 +162,10 @@ int Cn_min;
 
 int    com_max;
 
-clock_t cstart; 
-clock_t cend;
+clock_t Cstart; 
+clock_t Cend;
 
-double start, end, run;
+double ompstart, ompend, run;
 
 double tolerance;
 
@@ -445,8 +445,8 @@ int main(int argc, char * argv[]) {
   cout << "> Running " << title << endl; 
   //}
 
-  cstart = clock();
-  start  = omp_get_wtime();  
+  Cstart   = clock();
+  ompstart = omp_get_wtime();  
 
   if( a_type == 3 ){
     //--- Calculate betweenness using the Spectral algorithm   
@@ -522,10 +522,10 @@ int main(int argc, char * argv[]) {
   }
 
   //--- Recored the CPU-time taken
-  cend = clock();
-  end  = omp_get_wtime();
-  double cpu_time_used    = ((double) (cend - cstart)) / CLOCKS_PER_SEC;
-  double openmp_time_used = (double) (end-start);
+  Cend   = clock();
+  ompend = omp_get_wtime();
+  double cpu_time_used    = ((double) (Cend - Cstart)) / CLOCKS_PER_SEC;
+  double openmp_time_used = (double) (ompend-ompstart);
   if( if_quite ){
     cout << "" << endl;
     cout << "> cputime: " << cpu_time_used    << " seconds " << endl;
